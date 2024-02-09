@@ -11,7 +11,9 @@ div, header, main, footer, section {outline: 1px solid #ccc; min-height: 1rem; p
 .row {display: grid; row-gap: 1rem;}
 .col {position: relative; background-color: rgb(242, 230, 177);}
 p {text-align: center;}
-.m-display {display: block;}
+.mobile-show {display: block;}
+.mobile-hide {display: none;}
+img {width: 100%;}
 
 /* Grid System - Small only */
 .s-col-2 {grid-template-columns: repeat(2, 1fr);}
@@ -41,19 +43,21 @@ p {text-align: center;}
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .m-display {display: block;}
+  .mobile-show {display: block;}
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {
-  .m-display {display: block;}
+  .mobile-show {display: block;}
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .m-display {display: block;}
+  .mobile-show {display: block;}
+  .mobile-hide {display: block;}
 }
 /* Large and up */
 @media screen and (min-width: 64em) {
-  .m-display {display: none;}
+  .mobile-show {display: none;}
+  .mobile-hide {display: block;}
 }
 /* Large only */
 @media screen and (min-width: 64em) and
