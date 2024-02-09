@@ -2,23 +2,58 @@
 
 }
 
-*, *::after, *::before { margin: 0; padding: 0; box-sizing: border-box;}
+*, *::after, *::before {margin: 0; padding: 0; box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6 {font-family: "ubuntu", sans-serif; font-weight: 400; font-style: normal;}
+p {font-family: "Open Sans", Arial, Helvetica, sans-serif;}
+ul li {list-style: none;}
+/* Grid demo*/ 
+div, header, main, footer, section {outline: 1px solid #ccc; min-height: 1rem; padding: 1rem;}
+.row {display: grid; row-gap: 1rem;}
+.col {position: relative; background-color: rgb(242, 230, 177);}
+p {text-align: center;}
+.m-display {display: block;}
+
+/* Grid System - Small only */
+.s-col-2 {grid-template-columns: repeat(2, 1fr);}
+.s-col-5 {grid-template-columns: repeat(5, 1fr);}
+.s-col-6 {grid-template-columns: repeat(6, 1fr);}
+.s-col-1-1 {grid-template-columns: 1fr 1fr;}
+.s-col-1-2 {grid-template-columns: 1fr 2fr;}
+
+/* Grid System - Medium and up */
+@media screen and (min-width: 40em) {
+  .row {max-width: 70rem; column-gap: 1.5rem; row-gap: 1.5rem; margin: 0 auto;}
+  .m-col-2 {grid-template-columns: repeat(2, 1fr);}
+  .m-col-3 {grid-template-columns: repeat(3, 1fr);}
+  .m-col-4 {grid-template-columns: repeat(4, 1fr);}
+  .m-col-5 {grid-template-columns: repeat(5, 1fr);}
+  .m-col-6 {grid-template-columns: repeat(6, 1fr);}
+  .m-col-1-2 {grid-template-columns: 1fr 2fr;}
+}
+/* Grid System - Large and up */
+@media screen and (min-width: 64em) {
+  .l-col-2 {grid-template-columns: repeat(2, 1fr);}
+  .l-col-3 {grid-template-columns: repeat(3, 1fr);}
+  .l-col-4 {grid-template-columns: repeat(4, 1fr);}
+  .l-col-5 {grid-template-columns: repeat(5, 1fr);}
+  .l-col-6 {grid-template-columns: repeat(6, 1fr);}
+}
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+  .m-display {display: block;}
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {
-
+  .m-display {display: block;}
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
+  .m-display {display: block;}
 }
 /* Large and up */
 @media screen and (min-width: 64em) {
-
+  .m-display {display: none;}
 }
 /* Large only */
 @media screen and (min-width: 64em) and
