@@ -1,5 +1,10 @@
 :root{
-
+  -main-white:#f0f0f0;
+  -main-blue:#19b2de;
+  -secondary-blue:#1596bd;
+  -main-red:#d8605f;
+  -header-grey:#494949;
+  -p-grey:#a3a3a3;
 }
 
 *, *::after, *::before {margin: 0; padding: 0; box-sizing: border-box;}
@@ -16,7 +21,7 @@ p {text-align: center;}
 img {width: 100%;}
 
 /* Grid System - Small only */
-.s-col-2 {grid-template-columns: repeat(2, 1fr);}
+.s-col-2 .content__cols-item {grid-template-columns: repeat(2, 1fr);}
 .s-col-5 {grid-template-columns: repeat(5, 1fr);}
 .s-col-6 {grid-template-columns: repeat(6, 1fr);}
 .s-col-1-1 {grid-template-columns: 1fr 1fr;}
@@ -33,7 +38,7 @@ img {width: 100%;}
   .m-col-1-2 {grid-template-columns: 1fr 2fr;}
 }
 /* Grid System - Large and up */
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) {s
   .l-col-2 {grid-template-columns: repeat(2, 1fr);}
   .l-col-3 {grid-template-columns: repeat(3, 1fr);}
   .l-col-4 {grid-template-columns: repeat(4, 1fr);}
@@ -64,3 +69,18 @@ img {width: 100%;}
 (max-width: 74.9375em) {
   
 }
+
+.content__cols-item {background-color:white; outline: none; padding:0;}
+.content__title{background-color: white;}
+.content__title {text-align: center; color:#494949;}
+.content__title p {color:#a3a3a3; font-size:0.7em;}
+.a-component, .a-component div {outline: none; min-height: 1rem; padding: 0;}
+.a-component {display: flex; flex-direction: column; position: relative; color: white;}
+.a-component .a-component__date {position: absolute; top: 0; left: 0; width: 3.5em; height:2.625em; text-align: center; color: white; background-color:#d8605f;}
+.a-component .a-component__date h6 {padding-top:0.5625em; padding-bottom: 0.4375em; line-height: 1.40em;}
+.a-component .a-component__image img {display: block; width: 100%; height: auto;} 
+.a-component__title {display:flex; justify-content:space-between; background-color: #19b2de; padding-left:2em; height: 3.0625em; width:100%;}
+.a-component__title h3 {display: block; position:absolute; left:0.9375em; padding-top:0.4375em;}
+.subtitle h4 {display: block; position: absolute; bottom:1em; left:1.9em; font-size:0.6025em;}
+.icon {position:relative; display:flex; justify-content: center; align-items: center; width:37px; height:37px; background-color:#1596bd; margin-top:5px; margin-right:20px;}
+.icon img {width: 20px; height:18px;}
