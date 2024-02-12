@@ -21,33 +21,91 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://kit.fontawesome.com/74a4dc1639.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/74a4dc1639.js"></script>
   <link rel="stylesheet" href="https://use.typekit.net/nbl2bmm.css">
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <nav class="row s-col-1-1 m-col-2 l-col-2">
+    <nav class="row s-col-1-1 m-col-2 l-col-2 no-gap">
       <div class="nav-left-container col">
-        <div class="logo"><p>CSS Grid</p></div>
+        <div class="logo">
+          <span class="logo__name">Metrolics</span>
+        </div>
       </div>
       <div class="nav-right-container col">
         <ul class="nav-menu">
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
+          <li>            
+            <a id="home-btn" class="nav-menu__item item-home" href="#">
+              <span class="menu-item__icon"><i class="fas fa-home"></i></span>
+              <span class="menu-item__title">Home</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>            
+            <a id="pages-btn"  class="nav-menu__item item-pages"href="#">
+              <span class="menu-item__icon"><i class="fas fa-sitemap"></i></span>
+              <span class="menu-item__title">Pages</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="blog-btn" class="nav-menu__item item-blog" href="#">
+              <span class="menu-item__icon"><i class="fas fa-bullhorn"></i></span>
+              <span class="menu-item__title">Blog</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="portfolio-btn" class="nav-menu__item item-portfolio" href="#">
+              <span class="menu-item__icon"><i class="fas fa-briefcase"></i></span>
+              <span class="menu-item__title">Portfolio</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="contact-btn" class="nav-menu__item item-contact" href="#">
+              <span class="menu-item__icon"><i class="fas fa-envelope"></i></span>
+              <span class="menu-item__title">Contact</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
     <!-- body area -->
     <main>
-      <section class="carousel-container row col"><p>CSS Grid</p></section>
+      <section class="carousel-container">
+        <div class="main-carousel row col">
+          <div class="carousel-cell">
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="carousel-cell">            
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="carousel-cell">
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="banner-container row">
-        <div class="banner__elems col"><h1><p>CSS Grid</p></h1></div>
+        <div class="banner__elems">
+          <h1>Hey guys! This is the <span>Metrolics</span> theme.<br>It sports a responsive layout with a mobile layout.</h1>
+        </div>
       </section>
       <section class="content-01-container row">
         <div class="content-block--cols-4">
