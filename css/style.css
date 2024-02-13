@@ -125,4 +125,7 @@ footer.row {background-color:var(--footer); outline:0;}
 .item__tweets h5 {border-bottom:0.2em solid #de6262; padding:0.5em; }
 .item__newsletter h5 {border-bottom:0.2em solid #1bade6; padding:0.5em;}
 .email{padding-top: 2rem;}
-.twitter-container{ display: flex;}
+.twitter-container{ display: flex; align-items:center;}
+.highlighted {color: #4bbee4;}
+.twitter-icon {width:2.5rem; height:2.5rem;}
+.twitter-card {display:flex; flex-direction: column;}
