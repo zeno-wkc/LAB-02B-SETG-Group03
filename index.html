@@ -21,109 +21,450 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://kit.fontawesome.com/74a4dc1639.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/74a4dc1639.js"></script>
   <link rel="stylesheet" href="https://use.typekit.net/nbl2bmm.css">
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <nav class="row s-col-1-1 m-col-2 l-col-2">
+    <nav class="row s-col-1-1 m-col-2 l-col-2 no-gap">
       <div class="nav-left-container col">
-        <div class="logo"><p>CSS Grid</p></div>
+        <div class="logo">
+          <span class="logo__name">Metrolics</span>
+        </div>
       </div>
       <div class="nav-right-container col">
         <ul class="nav-menu">
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
-          <li><p>CSS Grid</p></li>
+          <li>            
+            <a id="home-btn" class="nav-menu__item item-home" href="#">
+              <span class="menu-item__icon"><i class="fas fa-home"></i></span>
+              <span class="menu-item__title">Home</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>            
+            <a id="pages-btn"  class="nav-menu__item item-pages"href="#">
+              <span class="menu-item__icon"><i class="fas fa-sitemap"></i></span>
+              <span class="menu-item__title">Pages</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="blog-btn" class="nav-menu__item item-blog" href="#">
+              <span class="menu-item__icon"><i class="fas fa-bullhorn"></i></span>
+              <span class="menu-item__title">Blog</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="portfolio-btn" class="nav-menu__item item-portfolio" href="#">
+              <span class="menu-item__icon"><i class="fas fa-briefcase"></i></span>
+              <span class="menu-item__title">Portfolio</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a id="contact-btn" class="nav-menu__item item-contact" href="#">
+              <span class="menu-item__icon"><i class="fas fa-envelope"></i></span>
+              <span class="menu-item__title">Contact</span>
+              <span class="menu-item__arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </li>
         </ul>
+        <div class="hambuger-menu"><img src="./img/hamburger_menu.png"></div>
       </div>
     </nav>
   </header>
     <!-- body area -->
     <main>
-      <section class="carousel-container row col"><p>CSS Grid</p></section>
-      <section class="banner-container row">
-        <div class="banner__elems col"><h1><p>CSS Grid</p></h1></div>
-      </section>
-      <section class="content-01-container row">
-        <div class="content-block--cols-4">
-          <div class="content__title col"><h2><p>CSS Grid</p></h2><h4><p>CSS Grid</p></h4></div>
-          <div class="row m-col-2 l-col-4">
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
+      <section class="carousel-container">
+        <div class="main-carousel row col">
+          <div class="carousel-cell">
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="carousel-cell">            
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="carousel-cell">
+            <ul>
+              <li>Metro Style</li>
+              <li>Retina Ready</li>
+              <li>Responsive Design</li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="content-02-container row">
-        <div class="content-block--cols-3">
-          <div class="content__title col"><h2><p>CSS Grid</p></h2><h4><p>CSS Grid</p></h4></div>
-          <div class="row m-col-2 l-col-3">
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col mobile-show"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
+      <div class="main-content-container">
+        <section class="banner-container row">
+          <div class="banner__elems">
+            <h1>Hey guys! This is the <span>Metrolics</span> theme.<br>It sports a responsive layout with a mobile layout.</h1>
           </div>
-        </div>
-      </section>
-      <section class="content-03-container row">
-        <div class="content-block--cols-3">
-          <div class="content__title col"><h2><p>CSS Grid</p></h2><h4><p>CSS Grid</p></h4></div>
-          <div class="row m-col-2 l-col-3">
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-            <div class="content__cols-item col"><img src="./img/placeholder.svg" alt="placeholder image"/></div>
-          </div>
-        </div>
-      </section>
-      <section class="content-04-container row">
-        <div class="content-block--cols-2">
-          <div class="content__title col"><h2><p>CSS Grid</p></h2><h4><p>CSS Grid</p></h4></div>
-          <div class="row m-col-2 l-col-2">
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
-            <div class="content__cols-item col"><p>CSS Grid</p></div>
-          </div>
-        </div>
-      </section>
-      <section class="company-logos-container row">
-        <div class="company-logos-block--cols-1 mobile-hide">
-          <div class="row m-col-5 l-col-5">
-            <div class="company-logos__logo-itemc col">
-              <img src="./img/placeholder.svg" alt="placeholder image"/>
+        </section>
+        <section class="content-01-container row">
+          <div class="content-block--cols-4">
+            <div class="content__title col">
+              <h2>Things That We Do</h2>
+              <h4>Ask us what we can do for you</h4>
             </div>
-            <div class="company-logos__logo-item col">
-              <img src="./img/placeholder.svg" alt="placeholder image"/>
-            </div>
-            <div class="company-logos__logo-item col">
-              <img src="./img/placeholder.svg" alt="placeholder image"/>
-            </div>
-            <div class="company-logos__logo-item col">
-              <img src="./img/placeholder.svg" alt="placeholder image"/>
-            </div>
-            <div class="company-logos__logo-item col">
-              <img src="./img/placeholder.svg" alt="placeholder image"/>
+            <div class="row m-col-2 l-col-4">
+              <div class="content__cols-item col">
+                <div class="icon-border">
+                  <img src="img/icon-solutions.png" class="content-01-icon" alt="solutions icon">
+                </div>
+                <h5>Web Solutions</h5>
+                <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
+              </div>
+              <div class="content__cols-item col">
+                <div class="icon-border">
+                  <img src="img/icon-photography.png" class="content-01-icon" alt="camera icon">
+                </div>
+                <h5>Photography</h5>
+                <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials </p>
+              </div>
+              <div class="content__cols-item col">
+                <div class="icon-border">
+                  <img src="img/icon-webdev.png" class="content-01-icon" alt="webdev icon">
+                </div>
+                <h5>Web Development</h5>
+                <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials </p>
+              </div>
+              <div class="content__cols-item col">
+                <div class="icon-border">
+                  <img src="img/icon-design.png" class="content-01-icon" alt="design icon">
+                </div>
+                <h5>Web Design</h5>
+                <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="content-02-container row">
+          <div class="content-block--cols-3">
+            <div class="content__title col">
+              <h2>What's Up Lately</h2>
+              <h4>Read up on our latest work</h4>
+            </div>
+            <div class="row m-col-2 l-col-3">
+              <div class="content__cols-item">
+                <div class="a-component">
+                  <div class="a-component__date">
+                    <h5>29</h5>
+                    <h6>Nov. 2013</h6>
+                  </div>
+                  <div class="a-component__image">
+                    <img src="img/content-image.png" alt="content">
+                  </div>
+                  <div class="a-component__title">
+                    <div class="title">
+                      <h3>Sample Image Post</h3>
+                    </div>
+                    <div class="subtitle">
+                      <h4>Photography</h4>
+                    </div>
+                    <div class="icon">
+                      <img src="img/camera-icon.png" alt="camera">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__cols-item">
+                <div class="a-component">
+                  <div class="a-component__date">
+                    <h5>29</h5>
+                    <h6>Nov. 2013</h6>
+                  </div>
+                  <div class="a-component__image">
+                    <img src="img/content-image.png" alt="content">
+                  </div>
+                  <div class="a-component__title">
+                    <div class="title">
+                      <h3>Sample Image Post</h3>
+                    </div>
+                    <div class="subtitle">
+                      <h4>Photography</h4>
+                    </div>
+                    <div class="icon">
+                      <img src="img/camera-icon.png" alt="camera">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__cols-item">
+                <div class="a-component">
+                  <div class="a-component__date">
+                    <h5>29</h5>
+                    <h6>Nov. 2013</h6>
+                  </div>
+                  <div class="a-component__image">
+                    <img src="img/content-image.png" alt="content">
+                  </div>
+                  <div class="a-component__title">
+                    <div class="title">
+                      <h3>Sample Image Post</h3>
+                    </div>
+                    <div class="subtitle">
+                      <h4>Photography</h4>
+                    </div>
+                    <div class="icon">
+                      <img src="img/camera-icon.png" alt="camera">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__cols-item">
+                <!-- component 4 -->
+                <div class="content__cols-item col mobile-show">
+                  <div class="a-component">
+                    <div class="a-component__date">
+                      <h5>29</h5>
+                      <h6>Nov. 2013</h6>
+                    </div>
+                    <div class="a-component__image">
+                      <img src="img/content-image.png" alt="content">
+                    </div>
+                    <div class="a-component__title">
+                      <div class="title">
+                        <h3>Sample Image Post</h3>
+                      </div>
+                      <div class="subtitle">
+                        <h4>Photography</h4>
+                      </div>
+                      <div class="icon">
+                        <img src="img/camera-icon.png" alt="camera">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <section class="content-03-container row">
+          <div class="content-block--cols-3">
+            <div class="content__title col">
+              <h2>Our Latest Projects</h2>
+              <h4>Client happy? We are happy.</h4>
+            </div>
+            <div class="row m-col-2 l-col-3">
+              <div class="content__cols-item col"><img src="img/content-image1.png" alt="content"></div>
+              <div class="content__cols-item col"><img src="img/content-image.png" alt="content"></div>
+              <div class="content__cols-item col"><img src="img/content-image.png" alt="content"></div>
+              <div class="content__cols-item col"><img src="img/content-image.png" alt="content"></div>
+              <div class="content__cols-item col"><img src="img/content-image.png" alt="content"></div>
+              <div class="content__cols-item col"><img src="img/content-image.png" alt="content"></div>
+            </div>
+          </div>
+        </section>
+        <section class="content-04-container row">
+          <div class="content-block--cols-2">
+            <div class="content__title col">
+              <h2>Things of above</h2>
+              <h4>Misc stuff we could not put anyplace else</h4>
+            </div>
+            <div class="row m-col-2 l-col-2">
+              <div class="content__cols-item col">
+                <ul class="collapse-list">
+                  <li>
+                      <input class="collapse-open" type="checkbox" id="collapse-1" checked>
+                      <label class="collapse-btn" for="collapse-1">Sample Accordion Menu</label>
+                      <div class="collapse-panel">
+                        <div class="collapse-panel__left">
+                          <img src="../img/copllapse-icon-01.png" />
+                        </div>
+                        <div class="collapse-panel__right">
+                          <h3>Web solution</h3>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                    <input class="collapse-open" type="checkbox" id="collapse-2">
+                    <label class="collapse-btn" for="collapse-2">Sample Accordion Menu</label>
+                    <div class="collapse-panel">
+                      <div class="collapse-panel__left">
+                        <img src="../img/copllapse-icon-01.png" />
+                      </div>
+                      <div class="collapse-panel__right">
+                        <h3>Web solution</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <input class="collapse-open" type="checkbox" id="collapse-3">
+                    <label class="collapse-btn" for="collapse-3">Sample Accordion Menu</label>
+                    <div class="collapse-panel">
+                      <div class="collapse-panel__left">
+                        <img src="../img/copllapse-icon-01.png" />
+                      </div>
+                      <div class="collapse-panel__right">
+                        <h3>Web solution</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content__cols-item col">
+                <div class="tab-container">
+                  <input type="radio" name="tab-container" id="tab1" aria-controls="tab-panel-01" checked>
+                  <label for="tab1">Tab 1</label>
+                  <input type="radio" name="tab-container" id="tab2" aria-controls="tab-panel-02">
+                  <label for="tab2">Tab 2</label>
+                  <input type="radio" name="tab-container" id="tab3" aria-controls="tab-panel-03">
+                  <label for="tab3">Tab 3</label>
+                  <div class="tab-panels">
+                    <section id="tab-panel-01" class="tab-panel">
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-01.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-02.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-03.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-04.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </section>
+                    <section id="tab-panel-02" class="tab-panel">
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-01.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-02.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-03.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-04.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </section>
+                    <section id="tab-panel-03" class="tab-panel">
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-01.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-02.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-03.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="tab-panel__paragraph">
+                        <img src="../img/tab-icon-04.png" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="company-logos-container row">
+          <div class="company-logos-block--cols-1 mobile-hide">
+            <div class="row m-col-5 l-col-5">
+              <div class="company-logos__logo-itemc col">
+                <img src="img/client1.png" alt="company logo" class="company-logo"/>
+              </div>
+              <div class="company-logos__logo-item col">
+                <img src="img/client2.png" alt="company logo" class="company-logo"/>
+              </div>
+              <div class="company-logos__logo-item col">
+                <img src="img/client3.png" alt="company logo" class="company-logo"/>
+              </div>
+              <div class="company-logos__logo-item col">
+                <img src="img/client4.png" alt="company logo" class="company-logo"/>
+              </div>
+              <div class="company-logos__logo-item col">
+                <img src="img/client5.png" alt="company logo" class="company-logo"/>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- footer area -->
-    <footer class="row">
-      <div class="footer-block--cols-4">
-        <div class="footer-block__title item__testimonial col"><h5><p>CSS Grid</p></h5></div>
-        <div class="row m-col-2 l-col-4">
-          <div class="footer-block__item item__about-us col"><h5><p>CSS Grid</p></h5></div>
-          <div class="footer-block__item item__fLickr col"><h5><p>CSS Grid</p></h5></div>
-          <div class="footer-block__item item__tweets col"><h5><p>CSS Grid</p></h5></div>
-          <div class="footer-block__item item__newsletter col"><h5><p>CSS Grid</p></h5></div>
+    <footer>
+      <div class="footer-block--cols-4 row">
+        <div class="footer-block__title item__testimonial col">
+          <div class="footer-testimonial">
+            <h2>Peewee Herman</h2>
+            <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
+          </div>
+          <img src="img/portrait.png" class="peewee">
+        </div>
+        <div class="line"></div>
+        <div class="footer-bottom row m-col-2 l-col-4">
+          <div class="footer-block__item item__about-us col">
+              <h5>About Us</h5>
+              <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt</p>
+            <div class="social-media">
+              <img src="img/btn-facebook.png" alt="facebook"/>
+              <img src="img/btn-google+.png" alt="google"/>
+              <img src="img/btn-instagram.png" alt="instagram"/>
+              <img src="img/btn-rss.png" alt="rss"/>
+              <img src="img/btn-twitter.png" alt="twitter"/>
+            </div>
+          </div>
+          <div class="footer-block__item item__flickr col">
+            <h5>Flickr Photos</h5>
+            <div class="flickr-content">
+              <img src="img/photo-0.png" alt="minion1"/>
+              <img src="img/photo-1.png" alt="minion2"/>
+              <img src="img/photo-2.png" alt="minion3"/>
+              <img src="img/photo-3.png" alt="minion4"/>
+              <img src="img/photo-4.png" alt="minion5"/>
+              <img src="img/photo-5.png" alt="minion6"/>
+            </div>
+          </div>
+          <div class="footer-block__item item__tweets col">
+            <h5>Recent Tweets</h5>
+            <div class="twitter-container">
+              <div class="twitter-post__left">
+                <img src="img/tweet.png" alt="twitter">
+              </div>
+              <div class="twitter-post__right">
+                <p><span class="tweets">@Minions</span> - ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass "</p>
+              </div>
+            </div>
+            <div class="twitter-container">
+              <div class="twitter-post__left">
+                <img src="img/tweet.png" alt="twitter">
+              </div>
+              <div class="twitter-post__right">
+                <p><span class="tweets">@Minions</span> - ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass "</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-block__item item__newsletter col">
+            <h5>Newsletter</h5>
+            <p>Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh </p>
+            <img src="img/email.png" alt="email" class="email">
+          </div>
         </div>  
       </div>
     </footer>
