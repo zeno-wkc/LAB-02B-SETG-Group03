@@ -122,6 +122,7 @@ footer.row {background-color:var(--footer); outline:0;}
 .social-media {display:flex; flex-direction:row; margin-top: 1rem; padding-left:0;}
 .item__flickr h5{ border-bottom:0.2em solid #f8ba0d; padding:0.5em; }
 .flickr-content {display: flex; flex-wrap:wrap; align-content:center; justify-content: space-between; align-items: center; row-gap: 1.25rem; }
+.flickr-content img {width:30%; height:auto;}
 .item__tweets h5 {border-bottom:0.2em solid #de6262; padding:0.5em; }
 .item__newsletter h5 {border-bottom:0.2em solid #1bade6; padding:0.5em;}
 .email{padding-top: 2rem;}
