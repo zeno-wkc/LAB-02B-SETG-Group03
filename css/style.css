@@ -108,3 +108,5 @@ img {width: 100%;}
 .content__cols-item:nth-child(4) .icon-border {border-color:var(--main-blue);}
 .company-logos__logo-item { background-color: Var(--main-white); outline: 0; padding: 0;}
 .company-logo {width:100; height:100;}
+.line {width:100%; height:0.013; background-color: var(--p-grey); position:relative;}
+.line::before {content:''; display:block; width:33%; height:100%; background-color:var(--main-blue); position:absolute; top:0;}
